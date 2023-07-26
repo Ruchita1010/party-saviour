@@ -1,5 +1,6 @@
 import { OrbitControls } from '@react-three/drei';
 import { RigidBody } from '@react-three/rapier';
+import { Player } from './Player';
 
 export const Backyard = () => {
   return (
@@ -17,6 +18,7 @@ export const Backyard = () => {
           <meshStandardMaterial color={0x136d15} />
         </mesh>
       </RigidBody>
+      <Player boundary={{ x1: 130, x2: 130, z1: 10, z2: 220 }} />
     </>
   );
 };
