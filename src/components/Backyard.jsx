@@ -3,6 +3,7 @@ import { RigidBody } from '@react-three/rapier';
 import { Player } from './Player';
 import { DanceFloor } from './modelComponents/DanceFloor';
 import { PartyTable } from './modelComponents/PartyTable';
+import { DiningArea } from './DiningArea/DiningArea';
 import { StreamersFrame } from './StreamersFrame';
 
 export const Backyard = () => {
@@ -30,6 +31,7 @@ export const Backyard = () => {
       <DanceFloor position={[0, 1, -15]} />
       <DanceFloor position={[0, 1, -21]} />
       <DanceFloor position={[0, 1, -9]} />
+      <DiningArea />
     </>
   );
 };
