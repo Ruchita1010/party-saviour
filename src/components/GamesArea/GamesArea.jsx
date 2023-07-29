@@ -1,12 +1,12 @@
+import { AboveGroundPool } from './modelComponents/AboveGroundPool';
+import { ChessSet } from './modelComponents/ChessSet';
+import { Dart } from './modelComponents/Dart';
+import { Jenga } from './modelComponents/Jenga';
+import { PoolTable } from './modelComponents/PoolTable';
+import { Table } from './modelComponents/Table';
+import { Trampoline } from './modelComponents/Trampoline';
 import { Stool } from './modelComponents/Stool';
 import { UniqueTable } from './modelComponents/UniqueTable';
-import { PoolTable } from './modelComponents/PoolTable';
-import { AboveGroundPool } from './modelComponents/AboveGroundPool';
-import { Dart } from './modelComponents/Dart';
-import { Trampoline } from './modelComponents/Trampoline';
-import { Table } from './modelComponents/Table';
-import { ChessSet } from './modelComponents/ChessSet';
-import { Jenga } from './modelComponents/Jenga';
 
 export const GamesArea = () => {
   return (
@@ -37,6 +37,10 @@ export const GamesArea = () => {
         rotation={[0, Math.PI, 0]}
       />
       <Trampoline scale={[0.6, 0.3, 0.6]} position={[12, 0, -14]} />
+      <Dart position={[28, 1.6, -18]} rotation={[0, Math.PI, 0]} />
+      <Dart position={[28, 1.6, -16]} rotation={[0, Math.PI, 0]} />
+
+      {/* Chess setup */}
       <group position={[23, 0, -28]}>
         <Table scale={0.12} rotation={[0, Math.PI / 2, 0]} />
         <ChessSet scale={0.014} position={[0.5, 0.95, 0]} />
@@ -55,8 +59,8 @@ export const GamesArea = () => {
         <Stool scale={0.08} position={[0.5, 0, 1.2]} />
         <Stool scale={0.08} position={[-0.5, 0, 1.2]} />
       </group>
-      <Dart position={[28, 1.6, -18]} rotation={[0, Math.PI, 0]} />
-      <Dart position={[28, 1.6, -16]} rotation={[0, Math.PI, 0]} />
+
+      {/* Jenga setup */}
       <group position={[16, 0, -20]}>
         <Table scale={0.12} />
         <Jenga scale={5} position={[0, 0.9, 0.8]} />
