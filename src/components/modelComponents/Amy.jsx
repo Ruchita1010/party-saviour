@@ -5,7 +5,7 @@ Command: npx gltfjsx@6.1.4 -T Amy.glb
 
 import React, { useEffect, useRef } from 'react';
 import { useGLTF, useAnimations } from '@react-three/drei';
-import AmyModel from '../../models/Amy.glb';
+import AmyModel from '../../assets/models/Amy.glb';
 import { usePrevious } from '../../hooks/usePrevious';
 
 export function Amy(props) {
