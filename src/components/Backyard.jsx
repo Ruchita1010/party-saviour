@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { degToRad } from 'three/src/math/MathUtils';
 import { OrbitControls } from '@react-three/drei';
 import { RigidBody } from '@react-three/rapier';
 import { Player } from './Player';
@@ -54,7 +55,7 @@ export const Backyard = () => {
     <>
       <hemisphereLight args={[0xfff6cc, 0xee4b2b, 1]} />
       <rectAreaLight args={[0xffffff, 0.5, 100, 100]} position={[0, 0, 15]} />
-      <OrbitControls />
+      <OrbitControls makeDefault maxDistance={8} maxPolarAngle={degToRad(85)} />
       {/* Ground */}
       <RigidBody
         type="fixed"
