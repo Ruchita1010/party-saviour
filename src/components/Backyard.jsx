@@ -52,7 +52,8 @@ export const Backyard = () => {
 
   return (
     <>
-      <ambientLight intensity={0.8} />
+      <hemisphereLight args={[0xfff6cc, 0xee4b2b, 1]} />
+      <rectAreaLight args={[0xffffff, 0.5, 100, 100]} position={[0, 0, 15]} />
       <OrbitControls />
       {/* Ground */}
       <RigidBody
