@@ -13,8 +13,8 @@ export const Backyard = () => {
       {/* Ground */}
       <RigidBody
         type="fixed"
-        scale={[30, 30, 30]}
-        position={[0, 0, -120]}
+        scale={10}
+        position={[5, 0, -35]}
         rotation={[-Math.PI / 2, 0, 0]}>
         <mesh>
           <planeGeometry args={[10, 10]} />
